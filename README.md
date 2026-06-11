@@ -27,8 +27,9 @@ Determination Factor: The escalation decision has a deterministic function in pl
 ## Project Structure (To be updated)
 VetTrack-Customer-Service-Agent/
 │
-|── 01_DataEngineering.ipynb     # Data preparation/cleaning and EDA
+├── 01_DataEngineering.ipynb     # Data preparation/cleaning and EDA
 ├── README.md                       # Project documentation
+├── synthetic_customer_support_tickets.csv  # Synthetic dataset created 
 ```
 
 ## Dataset Overview
@@ -36,7 +37,7 @@ Original: Sourced from Kaggle: Customer Support Tickets Dataset (200k+ Records)
 
 Final: Synthetically Generated (~2,700 closed cases) Modeled after VetTrack background
 
-We decided on a synthetically generated dataset opposed to the orignal dataset with over 200,000 records, because the original dataset lacked the proper data to train and evaluate our agent. 
+We decided on a synthetically generated dataset opposed to the orignal dataset with over 200,000 records, because the original dataset lacked the proper data to train and evaluate our agent. The creation of this dataset can be found in the Generation-Code branch. 
 
 This dataset contains 18 features and 2769 rows when only evaluating closed cases. Features include information about the customer that submitted the ticket as well as classifications and resolutions for the ticket regarding subject, status and priority. A column included is named "Product_Purchased" which will be disregarded in our model but appears due to our synthetic creation being based off of a Kaggle dataset named Customer Support Ticket Dataset. 
 
