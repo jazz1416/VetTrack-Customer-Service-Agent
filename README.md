@@ -35,17 +35,11 @@ Final: Synthetically Generated (~2,700 closed cases) Modeled after VetTrack back
 We decided on a synthetically generated dataset opposed to the orignal dataset with over 200,000 records, because the original dataset lacked the proper data to train and evaluate our agent. 
 
 ## Agent Architecture
-The agent uses DSPy architecture with the following tools:
+The agent uses DSPy architecture with two main signatures:
 
-Search_similar_instructions : semantic search over the knowledge database to find similar past tickets
+VetTrack Classifer : This takes a ticket and determines if it is relevant to VetTrack or not, then assigns a priority level to the ticket.
 
-Summarize : summarizes a ticket description 
-
-Classify : classifies the tickets into ticket type categories
-
-Escalate : flags a ticket for human intervention when a topic is too complex
-
-Ticket_id_lookup : simple function to retrieve a ticket based on the ID
+VetTrack Resolver : This takes the subject and classification of the ticket and tries to find relevant information in the knowledge database. 
 
 
 ## Models Tested
@@ -53,7 +47,7 @@ Ticket_id_lookup : simple function to retrieve a ticket based on the ID
 - Llama 3.1 our testing/comparison model
 
 ## Evaluation Approach
-(TO BE UPDATED)
+An LLM as a judge approach was used to score the agents responses on: relevance, accuracy and professionalism. 
 
 ## Challenges
 Our dataset quality was a challenge we overcame. All customer support ticket datasets had insufficent data to train and evaluate a model on, requiring the team to proceed with synthetic data. This synthic data can produce unrealistic patterns making the agent bias. 
