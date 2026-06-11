@@ -7,7 +7,7 @@ Our project objective was to create an automated customer support agent for VetT
 - Evelin Bustamante 
 - Jasmine Duong 
 - Daniel Sims
-- 
+  
 We shared the roles of project manager, Data Engineer, and AI Engineer
 
 ## Why an Agent
@@ -39,13 +39,13 @@ The agent uses DSPy architecture with the following tools:
 
 Search_similar_instructions : semantic search over the knowledge database to find similar past tickets
 
-summarize : summarizes a ticket description 
+Summarize : summarizes a ticket description 
 
-classify : classifies the tickets into ticket type categories
+Classify : classifies the tickets into ticket type categories
 
-escalate : flags a ticket for human intervention when a topic is too complex
+Escalate : flags a ticket for human intervention when a topic is too complex
 
-ticket_id_lookup : simple function to retrieve a ticket based on the ID
+Ticket_id_lookup : simple function to retrieve a ticket based on the ID
 
 
 ## Models Tested
@@ -56,4 +56,4 @@ ticket_id_lookup : simple function to retrieve a ticket based on the ID
 (TO BE UPDATED)
 
 ## Challenges
-Our dataset quality was a challenge we overcame. All Customer Support Ticket datasets had insufficent data to train and evaluate a model on, requiring the team to proceed with synthetic data. This synthic data can produce unrealistic patterns making the agent bias. 
+Our dataset quality was a challenge we overcame. All customer support ticket datasets had insufficent data to train and evaluate a model on, requiring the team to proceed with synthetic data. This synthic data can produce unrealistic patterns making the agent bias. 
