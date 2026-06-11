@@ -11,7 +11,9 @@ We shared the roles of project manager, Data Engineer, and AI Engineer
 
 ## Why an Agent
 Multi-step Reasoning: Unlike a traditional model or simple lookup functions, this tasks has multiple decisions in sequence. The agent must be able to classify an input, search for similar past tickets, evaluate a response, deem necessary for human intervention, and then produce a response.  Each step relys on the previous decision, this is what defines the necessity for an agent. 
+
 Support Tickets are Natural Language: The customer support tickets are coming through in natural language. It is impossible to train a model on every possible outcome, which is the second reason why an agent is necessary. 
+
 Determination Factor: The escalation decision has a deterministic function in place, deeming if human intervention is necessary for the proper response. This factor needs reasoning over context. 
 
 ## Methods Used
@@ -26,6 +28,7 @@ Determination Factor: The escalation decision has a deterministic function in pl
 
 ## Dataset
 Original: Sourced from Kaggle: Customer Support Tickets Dataset (200k+ Records)
+
 Final: Synthetically Generated (~2,700 closed cases) Modeled after VetTrack background
 
 We decided on a synthetically generated dataset opposed to the orignal dataset with over 200,000 records, because the original dataset lacked the proper data to train and evaluate our agent. 
@@ -34,9 +37,13 @@ We decided on a synthetically generated dataset opposed to the orignal dataset w
 The agent uses DSPy architecture with the following tools:
 
 Search_similar_instructions : semantic search over the knowledge database to find similar past tickets
+
 summarize : summarizes a ticket description 
+
 classify : classifies the tickets into ticket type categories
+
 escalate : flags a ticket for human intervention when a topic is too complex
+
 ticket_id_lookup : simple function to retrieve a ticket based on the ID
 
 
