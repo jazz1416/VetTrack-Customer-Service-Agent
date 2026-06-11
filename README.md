@@ -6,7 +6,8 @@ Our project objective was to create an automated customer support agent for VetT
 ## Team
 - Evelin Bustamante 
 - Jasmine Duong 
-- Daniel Sims 
+- Daniel Sims
+- 
 We shared the roles of project manager, Data Engineer, and AI Engineer
 
 ## Why an Agent
