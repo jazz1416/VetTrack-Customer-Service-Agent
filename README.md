@@ -30,7 +30,9 @@ VetTrack-Customer-Service-Agent/
 │
 ├── 01_DataEngineering.ipynb     # Data preparation/cleaning and EDA
 ├── README.md                       # Project documentation
-├── synthetic_customer_support_tickets.csv  # Synthetic dataset created 
+├── synthetic_customer_support_tickets.csv  # Synthetic dataset created
+├── agentJudgeEval.ipynb      # Agent and judge creation and testing
+├
 ```
 
 ## Dataset Overview
@@ -49,10 +51,16 @@ VetTrack Classifer : This takes a ticket and determines if it is relevant to Vet
 
 VetTrack Resolver : This takes the subject and classification of the ticket and tries to find relevant information in the knowledge database. 
 
+VetTrack Summarizer: This takes in the ticket subject, ticket description, and resolution and outputs a one sentence summary of both when a ticket is escalated or null if the ticket was not escalated.
+
+VetTrack Confidence Score: This takes in the ticket subject, ticket description, and resolution and outputs a confidence score describing how confident the agent is in its resolution. 
+
+VetTrack Escalation Reason: This takes in the ticket subject, ticket description, and resolution and outputs a description for why a ticket was escalated if it was, and null otherwise. 
+
 
 ## Models Tested
-- Mistral 7B our baseline model
-- Llama 3.1 our testing/comparison model
+- Llama-3.3-70B our baseline model
+- Qwen3-Next-80B-A3B-Instruct our testing/comparison model
 
 ## Evaluation Approach
 An LLM as a judge approach was used to score the agents responses on: relevance, accuracy and professionalism. 
