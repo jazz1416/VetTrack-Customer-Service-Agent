@@ -24,7 +24,7 @@ Determination Factor: The escalation decision has a deterministic function in pl
 - LLM as a Judge Evaluation
 - ROI Analysis
 
-## Project Structure (To be updated)
+## Project Structure
 ```
 VetTrack-Customer-Service-Agent/
 │
@@ -67,3 +67,8 @@ An LLM as a judge approach was used to score the agents responses on: relevance,
 
 ## Challenges
 Our dataset quality was a challenge we overcame. All customer support ticket datasets had insufficent data to train and evaluate a model on, requiring the team to proceed with synthetic data. This synthic data can produce unrealistic patterns making the agent bias. 
+
+## Contributions
+- Evelin completed the EDA, provided feedback to the judge, and aided in the completion of the README.
+- Jasmine completed the data preparation, helped create tools for the agent, aligned the judge (maybe), and aided in the compeltion of the README.
+- Daniel created the synthetic dataset, wrote the initial code to create the agent, judge, and evaluation queries.
