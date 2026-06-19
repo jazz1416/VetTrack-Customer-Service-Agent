@@ -35,7 +35,7 @@ VetTrack-Customer-Service-Agent/
 ├── golden_evaluation_results.json    # JSON file of traces
 ├── syntheticGeneration.py         # Code for the creation of the synthetic dataset
 ├── synthetic_customer_support_tickets.csv  # Synthetic dataset created
-├
+│
 ```
 
 ## Dataset Overview
