@@ -68,7 +68,7 @@ VetTrack Escalation Reason: This takes in the ticket subject, ticket description
 An LLM as a judge approach was used to score the agents responses on: relevance, accuracy and professionalism. 
 
 ## Model Comparison
-Our two models performed pretty similar to each other, llama-70b scoring a 4.8 on average versus qwen3-80b scoring a 4.6, likely do to llama-70b producing more direct answers. The gap in performance on evaluating a smaller dataset is very small and can be ignored in this case, but should be evaluated on a larger scale in the future. 
+Our two models performed pretty similar to each other, llama-70b scoring a 5.0 on average versus qwen3-80b scoring a 4.8, likely do to llama-70b producing more direct answers. The gap in performance on evaluating a smaller dataset is very small and can be ignored in this case, but should be evaluated on a larger scale in the future. 
 
 ## Challenges
 Our dataset quality was a challenge we overcame. All customer support ticket datasets had insufficent data to train and evaluate a model on, requiring the team to proceed with synthetic data. This synthic data can produce unrealistic patterns making the agent bias. 
