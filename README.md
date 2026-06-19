@@ -33,6 +33,7 @@ VetTrack-Customer-Service-Agent/
 ├── VetTrack Golden Evals.PNG       # Screenshot of traces from Databricks
 ├── agentJudgeEval.ipynb      # Agent and judge creation and testing
 ├── golden_evaluation_results.json    # JSON file of traces
+├── syntheticGeneration.py         # Code for the creation of the synthetic dataset
 ├── synthetic_customer_support_tickets.csv  # Synthetic dataset created
 ├
 ```
